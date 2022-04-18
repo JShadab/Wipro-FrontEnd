@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout</title>
+
+    <style>
+        div {
+            text-align: center;
+            border: cornflowerblue 1px solid;
+        }
+
+        #header,
+        #footer {
+            height: 50px;
+            padding-bottom: 15px;
+        }
+
+        #left,
+        #right {
+            width: 50%;
+            height: 400px;
+        }
+
+        #left {
+            float: right;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="header">
+        <h1> Welcome to my Website</h1>
+
+    </div>
+    <div id="main">
+
+        <div id="left">
+            <img src="mario.jpg" height="300" width="250"><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eos aliquid, ipsa impedit delectus,
+            quia expedita aspernatur vel esse libero sed fugiat velit asperiores, placeat quis eius accusamus
+            accusantium eveniet.
+        </div>
+
+        <div id="right">
+            <h3>Login Form</h3>
+            Email: <input type="email"> <br>
+            Password : <input type="password"> <br>
+            <input type="submit"> <br>
+        </div>
+
+
+    </div>
+    <div id="footer">About Us | Career | Contact Us</div>
+
+</body>
+
+</html>
