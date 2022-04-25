@@ -42,7 +42,11 @@ function submitContact(event){
       //  jobTitle: jobTitle,
       //  notes: notes
     }
-    if(validateNameFirst(contact.firstName)==true&&validateNameLast(contact.lastName)==true&&validateEmail(contact.email)==true&&validatePhoneNumberWork(contact.homeNo)==true&&validateBirthDate(contact.contactAddedOn)){
+    if(validateNameFirst(contact.firstName)==true
+    &&validateNameLast(contact.lastName)==true
+    &&validateEmail(contact.email)==true
+   // &&validatePhoneNumberHome(contact.homeNo)==true
+    &&validateBirthDate(contact.contactAddedOn)){
         persistSubmittedContact(contact);
     }
     else

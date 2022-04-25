@@ -1,3 +1,28 @@
 {
-  "contacts":[]
-}   
+  "contacts": [
+    {
+      "firstName": "Shadab",
+      "lastName": "Khan",
+      "email": "abc@kbc.com",
+      "homeNo": "7007586179",
+      "contactAddedOn": "2022-04-25",
+      "id": 1
+    },
+    {
+      "firstName": "Kajal",
+      "lastName": "Singh",
+      "email": "kajal@gmail.com",
+      "homeNo": "1234567890",
+      "contactAddedOn": "2021-12-14",
+      "id": 2
+    },
+    {
+      "firstName": "Raj",
+      "lastName": "Bhandari",
+      "email": "raj@ddlj.com",
+      "homeNo": "1231231234",
+      "contactAddedOn": "2021-11-17",
+      "id": 3
+    }
+  ]
+}
