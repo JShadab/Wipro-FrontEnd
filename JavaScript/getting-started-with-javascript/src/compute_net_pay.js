@@ -11,9 +11,17 @@ The function should return error message "Invalid Input Types, All Inputs Should
 for any non-numeric value passed to the function.
 
 */
+module.exports = function calculateNetPayable(pricePerKilo, quantityInKilo, discountPercentage) {
 
-module.exports = function calculateNetPayable() {
-   
   // Provide Solution Code Here
+  if (typeof pricePerKilo === 'string' || typeof quantityInKilo === 'string' || typeof discountPercentage === 'string')
+    return "Invalid Input Types, All Inputs Should Be of Type Number !!";
+  else {
 
+    const totalPrice = pricePerKilo * quantityInKilo
+    const discount = (totalPrice * discountPercentage) / 100
+
+    const ans =  totalPrice - discount;
+    return ans.toString();
+  }
 }
