@@ -1,0 +1,170 @@
+In Java:
+----------
+int x = 10;
+	x = 15;
+	
+	x = "20"; // C.E.
+	x = false; // C.E.
+	
+	
+--------------------------------
+void hello()
+		{
+			System.out.println("Hello");
+		}
+	
+
+In JavaScript:
+---------------
+
+ var x = 10; // number
+
+	x = 15; // number
+	
+	x = "20";  // String
+	x = false; // 
+	
+-------------------------------------
+
+function <name>(<parameters)
+	{
+	
+	}
+	
+--------------------------
+function hello()
+		{
+			console.log('Hello');
+			console.log("World");
+		}
+		
+JS variables
+JS functions 
+JS operators
+JS array.
+
+----------------------------------
+int[] arr = new int[5];  OR int[] arr = {1,2,3,4,5};
+
+
+var arr = ["Mango", "Apple", "Orange"]
+
+for(var i =0; i < arr.length; i++){
+  
+  var x = arr[i];
+  console.log(x);
+}
+
+BLANK ARRAY -> const arr = [];
+
+JavaScript Object:
+-------------------
+JS objects are basically a map/dictionary which containes key-value or name-value pairs.
+
+var emp1 = {};
+
+var emp2 = {  
+				name : 'Shadab', 
+				age : 35,
+				salary : 1234
+		  };
+--------------------------
+var emp = {}
+
+emp.name= 'shadab'
+emp.age =35
+emp.salary =1234.50
+
+console.log(emp) ; //{name: 'shadab', age: 35, salary: 1234.5}
+console.log(emp.age); //35
+console.log(emp['age']); //35
+
+------------------------------------------------------
+1. Check whether a number is even or odd.
+2. print the numbers from 1 to 10.
+3. print  sum the numbers from 1 to 10.
+
+4. Create an array , print it, reverse it, and print it
+5. Find the area of circle with given radius.
+6. Find the roots of quardatic equation.
+7. convert temp to fahrenheit to celsius to Celcius
+------------------------------------------------------------------------------------
+DOM API(Documet Object Model):
+--------------------------------
+document -> current web/html page
+window -> a tab of a browser.
+
+Create a Login Page,
+
+Email : ------------------------
+Password : ---------------------
+   Login
+   
+--------------------------------------------------
+var VS let VS const
+-----------------------
+Always use const, never go with var.
+If u are not able to use const, use let.
+
+
+var x = 10; // OK
+    x = 20; //OK
+	
+const y = 10;// OK
+      y = 20; // Error
+
+
+void foo()	  
+{
+   let z =10;
+	z = 20; //OK
+}
+
+console.log(z // ERROR
+
+-------------------------------------------------------------------------
+Web Application
+---------------------
+Front-End or Client Side  <=== HTTP Protocol ===> Back-End or Server Side
+
+What is client?
+----------------------
+A client can send request to the server.
+Browser | Rest Client tools(POSTMan) | Any program
+
+What is Server:
+----------------
+Which can process and get response back to the client.
+
+Tomcat, JsonServer, .....
+
+
+Q. In how many ways an HTTP client can send request to the HTTP server?
+
+GET
+POST
+PUT
+DELETE
+
+HEAD
+TRACE
+OPTION
+-------------
+PATCH
+	
+==============================================================
+GET vs POST
+-----------
+
+How to send GET request:
+------------------------
+1. When user type URL and hit enter
+
+2. When user clicks on a hyper link
+
+3. <form action='---'>  OR <form action='---' method= 'get'>
+
+
+How to send POST request:
+------------------------
+1. <form action='---' method= 'post'>

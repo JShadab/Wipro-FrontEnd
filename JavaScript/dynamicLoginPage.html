@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic</title>
+
+
+
+</head>
+
+<body id="body">
+
+
+    <script>
+        function createUI() {
+            const body = document.getElementById('body');
+
+            const lbEmail = document.createTextNode('Email: ');
+            const lbPassword = document.createTextNode('Password: ');
+
+            const txtEmail = document.createElement('input');
+            txtEmail.type = 'email';
+
+            const txtPassword = document.createElement('input');
+            txtPassword.type = 'password';
+
+            const btnLogin = document.createElement('input');
+            btnLogin.type = 'button';
+            btnLogin.value='Login';
+
+            body.appendChild(lbEmail);
+            body.appendChild(txtEmail);
+            body.appendChild(document.createElement('br'));
+
+
+            body.appendChild(lbPassword);
+            body.appendChild(txtPassword);
+            body.appendChild(document.createElement('br'));
+
+            body.appendChild(btnLogin);
+
+
+
+        }
+
+        createUI();
+    </script>
+</body>
+
+</html>

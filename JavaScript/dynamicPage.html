@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic</title>
+
+
+
+</head>
+
+<body id="body">
+
+
+    <script>
+        function createUI() {
+            const body = document.getElementById('body');
+
+            const table = document.createElement('table');
+            table.border='1px';
+
+            const headerRow = document.createElement('tr');
+
+            const headerCol1 = document.createElement('th');
+            headerCol1.innerHTML = 'NAME';
+            headerCol1.style.backgroundColor= 'yellow';
+
+            const headerCol2 = document.createElement('th');
+            headerCol2.innerHTML = 'AGE';
+            headerCol2.style.backgroundColor= 'yellow';
+
+            const headerCol3 = document.createElement('th');
+            headerCol3.innerHTML = 'SALARY';
+            headerCol3.style.backgroundColor= 'yellow';
+
+            headerRow.appendChild(headerCol1);
+            headerRow.appendChild(headerCol2);
+            headerRow.appendChild(headerCol3);
+
+            //----------------------------------------
+            const dataRow = document.createElement('tr');
+
+
+            const dataCol1 = document.createElement('td');
+            dataCol1.innerHTML = 'Shadab';
+
+            const dataCol2 = document.createElement('td');
+            dataCol2.innerHTML = '35';
+
+            const dataCol3 = document.createElement('td');
+            dataCol3.innerHTML = '1234';
+
+            dataRow.appendChild(dataCol1);
+            dataRow.appendChild(dataCol2);
+            dataRow.appendChild(dataCol3);
+
+            table.appendChild(headerRow);
+            table.appendChild(dataRow);
+
+            body.appendChild(table);
+
+        }
+
+        createUI();
+    </script>
+</body>
+
+</html>

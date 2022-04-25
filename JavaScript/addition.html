@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+
+    <script>
+        function calculate() {
+            const a = Number(document.getElementById('first').value);
+            const b = parseInt(document.getElementById('second').value);
+
+            //alert(a + b);
+            document.getElementById('output').value = a + b;
+        }
+        function changeIt() {
+            const h = document.getElementById('abc');
+
+            h.innerHTML = 'Welcome to DOM manipulation';
+
+            h.style.color = 'red';
+            h.style.fontSize = '30px';
+        }
+
+
+    </script>
+</head>
+
+<body>
+    First Number: <input type="number" id="first"> <br><br>
+    Second Number: <input type="number" id="second"> <br><br>
+
+    Output: <input type="number" id="output" readonly> <br><br>
+
+    <input type="button" value="Add" onclick="calculate()">
+
+    <hr>
+    <h1 id="abc">Hello Friends</h1>
+    <input type="button" value="Change It" onclick="changeIt()">
+</body>
+
+</html>
